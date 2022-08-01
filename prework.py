@@ -1,7 +1,13 @@
 # Question 1
 # Write a function to print "hello_USERNAME!" USERNAME is the input of the function
 def hello_name(user_name):
+    
     print("hello_"+user_name)
+
+# Question 1 Version 2 
+# Uses input instead of an argument based on comment on Google Classroom.
+def hello_name2():
+    print("hello_"+input("Please enter your name:"))
 
 # Question 2
 # Write a python function, first_odds that prints the odd numbers from 1-100 and returns nothing
@@ -34,7 +40,6 @@ def is_consecutive(a_list):
     
     index = 1
     consecutive = True
-
     #Loop until we've checked the entire list or found a pair that is not consecutive
     while index < len(a_list) and consecutive:
         #Check that the difference between neighboring values is 1
